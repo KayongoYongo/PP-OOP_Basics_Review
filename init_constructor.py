@@ -15,6 +15,8 @@ class Animal:
     """
     def __str__(self) -> str:
         return f"{self.first}  is a {self.color} animal, and it's {self.age} years old."
+    
+# In Python object-oriented programming (OOP), the self keyword is used to refer to the instance of the class within the class definition
 
 cat = Animal('Gandalf', 'the Great')
 dog = Animal('Rafiki','the blackest')
