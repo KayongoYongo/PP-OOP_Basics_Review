@@ -1,5 +1,5 @@
 class Animal:
-    def __init__(self, first, last, color, age):
+    def __init__(self, first, last, color=None, age=None):
         self.first = first
         self.last = last
         self.color = color
@@ -16,16 +16,13 @@ class Animal:
     def __str__(self) -> str:
         return f"{self.first}  is a {self.color} animal, and it's {self.age} years old."
 
-cat = Animal('Gandalf', 'The cuteness','brown', 10)
-dog = Animal('Rafiki', 'The bodld','black', 5)
-
+cat = Animal('Gandalf', 'the Great')
+dog = Animal('Rafiki','the blackest')
 """
 If we print the instances without defining the ___str__ method,
 we will end up printing the memory location of the object
 """
-
 # print(cat)
 # print(dog)
-
 print(cat.full_name) # Without the bracket, I am printing a reference to the function object itself
 print(cat.full_name())
