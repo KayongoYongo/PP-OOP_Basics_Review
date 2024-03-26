@@ -26,5 +26,7 @@ we will end up printing the memory location of the object
 """
 # print(cat)
 # print(dog)
-print(cat.full_name) # Without the bracket, I am printing a reference to the function object itself
-print(cat.full_name())
+# print(cat.full_name) # Without the bracket, I am printing a reference to the function object itself
+# print(cat.full_name())
+# The dir function shows the list of methods available to the class
+print(dir(Animal))
