@@ -1,3 +1,5 @@
+from sqlalchemy.ext.declarative import declarative_base
+
 class Employee:
     # Class variables are variables that are shared within each variable of a class
     raise_amount = 1.04
@@ -48,5 +50,9 @@ class Cube(Rectangle):
 square = Square(length=5)
 cube = Cube(length=5, width=5, height=5)
 
-print(square.area())
-print(cube.volume())
+# print(square.area())
+# print(cube.volume())
+
+print(dir(declarative_base))
+print(None)
+print(dir(Rectangle))
